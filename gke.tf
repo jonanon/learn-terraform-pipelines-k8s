@@ -30,7 +30,7 @@ resource "google_container_node_pool" "engineering_preemptible_nodes" {
   node_count = var.enable_consul_and_vault ? 2 : 1
 
   node_config {
-    preemptible  = true
+    preemptible  = false
     machine_type = "n1-standard-1"
 
     metadata = {
