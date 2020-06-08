@@ -31,3 +31,11 @@ variable "enable_consul_and_vault" {
   default     = false
   description = "Enable consul and vault for the secrets cluster"
 }
+
+variable "workspace" {
+  type        = string
+}
+
+variable "organization" {
+  type        = string
+}

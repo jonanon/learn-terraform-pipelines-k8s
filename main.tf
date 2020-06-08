@@ -1,9 +1,9 @@
 terraform {
   backend "remote" {
-    organization = "hashicorp-learn"
+    organization = var.organization
 
     workspaces {
-      name = "learn-terraform-pipelines-k8s"
+      name = var.workspace
     }
   }
 }
